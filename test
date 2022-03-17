@@ -1,0 +1,32 @@
+describe('Search, () => {
+
+  it('GET /search should show parts', async () => {
+    const res = await requestWithSupertest.get('/carparts');
+      expect(res.status).toEqual(200);
+      expect(res.type).toEqual(expect.stringContaining('json'));
+      expect(res.body).toHaveProperty(carparts')
+  });
+
+});
+describe(‘users/index:’, () => {
+
+  it('GET /show user inf', async () => {
+    const res = await requestWithSupertest.get('/users/index:');
+      expect(res.status).toEqual(200);
+      expect(res.type).toEqual(expect.stringContaining('json'));
+      expect(res.body).toHaveProperty(‘users/index:')
+  });
+
+});
+
+
+describe(‘addCarPart’, () => {
+
+  it('GET /show user inf', async () => {
+    const res = await requestWithSupertest.get(' addCarPart ');
+      expect(res.status).toEqual(200);
+      expect(res.type).toEqual(expect.stringContaining('json'));
+      expect(res.body).toHaveProperty(‘addCarPart ')
+  });
+
+});
